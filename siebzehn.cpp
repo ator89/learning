@@ -1,13 +1,13 @@
 #include <iostream>
+#include "persona.h"
 
-class Persona{
-      private:
-              int ojos;
-              
-      public:
-             int ojos(){
-                 ojos = 2;
-                 return ojos;
-                 };
-      
-      }
+using namespace std;
+
+int main(int argc, char *argv[]){
+
+   Persona p;
+   cout << "Una persona: " << p.ojos()<<endl;
+    
+   system("pause");
+   return 0;
+}

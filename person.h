@@ -3,7 +3,9 @@
 using namespace std;
 
 class Persona{
-      private:
+      
+      //private:
+      protected:
               int _ojos;
               int _brazos;
               int _cabeza;

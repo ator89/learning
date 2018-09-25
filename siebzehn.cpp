@@ -13,7 +13,12 @@ int main(int argc, char *argv[]){
    p.color_ojos = "lokokok";
    cout << p.color_ojos << endl;
    cout << p.color_pelo << endl;
-    
+   cout << p.altura(43.5) << endl;
+   cout << p.peso(138.7) << endl;
+   p.edad = 88;
+   cout << p.edad << endl;
+   
+   
    system("pause");
    return 0;
 }

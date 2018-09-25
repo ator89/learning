@@ -14,6 +14,14 @@ int main(int argc, char *argv[])
   pl.color_ojos = "blue";
   cout << "" << pl.color_ojos <<endl;
   
+  //Jugador nuevo("g","h","r");
+  cout << pl.cambiar_nombre(pl, "Nuevo Nombre") << endl;
+  cout << "Nombre: " << pl.nombre() << endl;
+  
+  Jugador * p;
+  p = &pl;
+  cout << p->nombre() << endl;
+  
   
   system("pause");
   return 0;

@@ -11,12 +11,12 @@ class Jugador : public Persona
    public:
    Jugador(string n, string a, string deporte) : Persona(n,a)
    {
-      _deporte=deporte;              
+      this->_deporte=deporte;              
    };
    
    string getDeporte()
    {
-     return _deporte;
+     return this->_deporte;
    }
    
    string cambiar_nombre(Jugador& d, string n)

@@ -18,6 +18,7 @@ class Persona{
              int brazos();
              int cabeza() { _cabeza=1; return _cabeza; };
              static string color_ojos;
+             static string color_pelo;
       };
       
 int Persona::brazos()
@@ -27,4 +28,4 @@ int Persona::brazos()
 }
 
 string Persona::color_ojos = "negro";
-
+string Persona::color_pelo = "white";

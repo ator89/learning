@@ -7,9 +7,10 @@ class Persona{
               int _ojos;
               int _brazos;
               int _cabeza;
-              
+              string _nombre;
+              string _apellido;
       public:
-             Persona();
+             Persona(string n, string a);
              int ojos(){return _ojos;
                  };
                  
@@ -20,13 +21,18 @@ class Persona{
              float altura(float a){return a;};
              float peso(float p);
              static int edad;
+             string nombre(){return _nombre;};
+             string apellido() {return _apellido;};
       };
       
-Persona::Persona()
+      
+Persona::Persona(string n, string a)
 {
    _ojos = 2;
    _brazos = 2;
    _cabeza = 1;
+   _nombre = n;
+   _apellido = a;
 }
       
 int Persona::brazos()

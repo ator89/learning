@@ -33,5 +33,14 @@ using namespace std;
 
 int main()
 {
+  Rectangulo rectangulo(100,25,62,80);
+  int area = rectangulo.getArea();
+  cout << "Coordenada X1: "<< endl;
+  cout<< rectangulo.getPtArribaI().getX()<<endl;
+  cout << rectangulo.getPtArribaD().getY() << endl;
+  
+  cout << area << endl;
+    
+  system("pause");
   return 0;
 }

@@ -7,7 +7,8 @@ class Punto
   public:
        void setX(int x){_x=x;};
        void setY(int y){_y=y;}; 
-      
+       int getX()const { return _x; };
+       int getY()const { return _y; };
   private: 
      int _x;
      int _y;       

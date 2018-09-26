@@ -18,6 +18,7 @@ int main(int argc, char *argv[])
   cout << pl.cambiar_nombre(pl, "Nuevo Nombre") << endl;
   cout << "Nombre: " << pl.nombre() << endl;
   
+  
   Jugador * p;
   p = &pl;
   cout << p->nombre() << endl;

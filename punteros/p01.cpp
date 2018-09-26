@@ -13,8 +13,14 @@ int main()
   cout << &n1<< endl;
   
   
+  //Inicializar puntero
+  unsigned short int edad = 50;
+  int *pValor = 0;
+  pValor = &edad; //Poner la dirección de "edad" en "pValor"
   
-  
+  //Obtener el valor de un variable a través de su puntero
+  unsigned short int _edad;
+  _edad = *pValor; //indirection
   
   
   

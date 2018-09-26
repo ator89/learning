@@ -16,33 +16,33 @@ class Punto
 class Rectangulo
 {
    public:
-          Rectangulo(int a, int b, int c, int d);
-          ~Rectangulo(){};
+          Rectangulo(int arriba, int izquierda, int abajo, int derecha);
+          ~Rectangulo(){};//Destructor
           
           //accesores
-          int getA() const { return _a; };
-          int getB() const { return _b; };
-          int getC() const { return _c; };
-          int getD() const { return _d; };
+          int getArriba() const { return _arriba; };
+          int getIzquierda() const { return _izquierda; };
+          int getAbajo() const { return _abajo; };
+          int getDerecha() const { return _derecha; };
           
-          void setA(int a){ _a = a; };
-          void setB(int b){ _b = b; };
-          void setC(int c){ _c = c; };
-          void setD(int d){ _d = d; };
+          void setArriba(int arriba){ _arriba = arriba; };
+          void setIzquierda(int izquierda){ _izquierda = izquierda; };
+          void setAbajo(int abajo){ _abajo = abajo; };
+          void setDerecha(int derecha){ _derecha = derecha; };
           
-          Punto getPtA() const { return _ptA; };
-          Punto getPtB() const { return _ptB; };
-          Punto getPtC() const { return _ptC; };
-          Punto getPtD() const { return _ptD; };
+          Punto getPtArribaI() const { return _ptArribaI; };
+          Punto getPtAbajoI() const { return _ptAbajoI; };
+          Punto getPtArribaD() const { return _ptArribaD; };
+          Punto getPtAbajoD() const { return _ptAbajoD; };
           
-          void setPtA(Punto loc ){ _ptA = loc; };
-          void setPtB(Punto loc ){ _ptB = loc; };
-          void setPtC(Punto loc ){ _ptC = loc; };
-          void setPtD(Punto loc ){ _ptD = loc; };
+          void setPtArribaI(Punto loc ){ _ptArribaI = loc; };
+          void setPtAbajoI(Punto loc ){ _ptAbajoI = loc; };
+          void setPtArribaD(Punto loc ){ _ptArribaD = loc; };
+          void setPtAbajoD(Punto loc ){ _ptAbajoD = loc; };
           
           int getArea() const;
-   
+          
    private:
-           int _a, _b, _c, _d;
-           Punto _ptA, _ptB, _ptC, _ptD;
+           int _arriba, _izquierda, _abajo, _derecha;
+           Punto _ptArribaI, _ptAbajoI, _ptArribaD, _ptAbajoD;
 };

@@ -22,6 +22,10 @@ int main()
   cout << "*pEdad: " << *pEdad <<endl;
   cout << "edad: " << edad1 << endl;
   
+  cout << "set edad1 = 9 " << endl;
+  edad1=9;
+  cout <<"*pEdad " << *pEdad << endl;
+  
   system("pause");
   return 0;
 }
